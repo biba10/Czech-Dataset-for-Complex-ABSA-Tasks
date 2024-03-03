@@ -1,5 +1,5 @@
 # Aspect-Based Sentiment Analysis #
-This repository contains the code and data for the "Czech Dataset for Complex Aspect-Based Sentiment Analysis Tasks".
+This repository contains the code and data for the "Czech Dataset for Complex Aspect-Based Sentiment Analysis Tasks" accepted to <a href="https://lrec-coling-2024.org/">LREC-COLING 2024</a> conference.
 
 ## Requirements ##
 Python 3.10 and higher is required. The code was tested on Python 3.11.4.
