@@ -1,0 +1,7 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.0.1
+transformers==4.33.1
+sentencepiece==0.1.99
+pytorch-lightning==2.0.8
+torchmetrics==1.1.2
+protobuf==4.24.3
