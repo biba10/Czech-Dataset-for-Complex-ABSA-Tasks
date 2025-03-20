@@ -59,3 +59,29 @@ To run the code, use the command `python main.py`. The code can be configured us
 * `python main.py --model xlm-roberta-base --batch_size 64 --max_seq_length 256 --lr 1e-5 --epochs 50 --dataset_path cs_rest_o --optimizer AdamW --mode dev --checkpoint_monitor pd_f1 --accumulate_grad_batches 1 --task apd`
 * `python main.py --model xlm-roberta-base --batch_size 64 --max_seq_length 256 --max_seq_length_label 256 --lr 1e-5 --epochs 50 --dataset_path cs_rest_m --optimizer AdamW --mode test --task ate`
 * `python main.py --model xlm-roberta-base --batch_size 64 --max_seq_length 256 --max_seq_length_label 256 --lr 1e-5 --epochs 10 --dataset_path cs_rest_n --checkpoint_monitor acd_f1 --optimizer AdamW --mode dev --task acd`
+
+## Citation
+If you find this repository helpful for your research, please cite our paper as follows:
+```
+@inproceedings{smid-etal-2024-czech,
+    title = "{C}zech Dataset for Complex Aspect-Based Sentiment Analysis Tasks",
+    author = "{\v{S}}m{\'i}d, Jakub  and
+      P{\v{r}}ib{\'a}{\v{n}}, Pavel  and
+      Prazak, Ondrej  and
+      Kral, Pavel",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.384/",
+    pages = "4299--4310",
+    abstract = "In this paper, we introduce a novel Czech dataset for aspect-based sentiment analysis (ABSA), which consists of 3.1K manually annotated reviews from the restaurant domain. The dataset is built upon the older Czech dataset, which contained only separate labels for the basic ABSA tasks such as aspect term extraction or aspect polarity detection. Unlike its predecessor, our new dataset is specifically designed to allow its usage for more complex tasks, e.g. target-aspect-category detection. These advanced tasks require a unified annotation format, seamlessly linking sentiment elements (labels) together. Our dataset follows the format of the well-known SemEval-2016 datasets. This design choice allows effortless application and evaluation in cross-lingual scenarios, ultimately fostering cross-language comparisons with equivalent counterpart datasets in other languages. The annotation process engaged two trained annotators, yielding an impressive inter-annotator agreement rate of approximately 90{\%}. Additionally, we provide 24M reviews without annotations suitable for unsupervised learning. We present robust monolingual baseline results achieved with various Transformer-based models and insightful error analysis to supplement our contributions. Our code and dataset are freely available for non-commercial research purposes."
+}
+```
